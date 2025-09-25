@@ -16,20 +16,20 @@
       background: #1b263b;
       color: #fff;
       padding: 2rem 1rem;
-    }
-    .header-container {
       display: flex;
-      align-items: center;
       justify-content: center;
-      gap: 20px; /* espacio entre logo y texto */
-      flex-wrap: wrap; /* en pantallas pequeñas, pasa a columna */
+      align-items: center;
+      gap: 2rem; /* separación entre logo y texto */
     }
-    .header-container img {
-      width: 100px;
+    header img {
+      width: 100px; /* ajusta según tu logo */
       height: auto;
     }
     .header-text {
-      text-align: center; /* centra el texto dentro de su bloque */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; /* centra cada línea de texto */
     }
     .header-text h1 {
       margin: 0;
@@ -70,12 +70,10 @@
 </head>
 <body>
   <header>
-    <div class="header-container">
-      <img src="logo.png" alt="Logo VMJJ">
-      <div class="header-text">
-        <h1>VMJJ</h1>
-        <p>Electromovilidad Autónoma en Minería</p>
-      </div>
+    <img src="logo.png" alt="Logo VMJJ">
+    <div class="header-text">
+      <h1>VMJJ</h1>
+      <p>Electromovilidad Autónoma en Minería</p>
     </div>
   </header>
 
