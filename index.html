@@ -15,14 +15,24 @@
     header {
       background: #1b263b;
       color: #fff;
-      text-align: center;
       padding: 2rem 1rem;
     }
-    header h1 {
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px; /* espacio entre logo y texto */
+      flex-wrap: wrap; /* para que en pantallas pequeñas se acomode */
+    }
+    .header-container img {
+      width: 100px; /* ajusta el tamaño del logo */
+      height: auto;
+    }
+    .header-text h1 {
       margin: 0;
       font-size: 2.5rem;
     }
-    header p {
+    .header-text p {
       margin: 0.5rem 0 0;
       font-size: 1.2rem;
     }
@@ -57,8 +67,13 @@
 </head>
 <body>
   <header>
-    <h1>VMJJ</h1>
-    <p>Electromovilidad Autónoma en Minería</p>
+    <div class="header-container">
+      <img src="logo.png" alt="Logo VMJJ">
+      <div class="header-text">
+        <h1>VMJJ</h1>
+        <p>Electromovilidad Autónoma en Minería</p>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -100,7 +115,9 @@
 
   <footer>
     <p>&copy; 2025 VMJJ - Electromovilidad Autónoma en Minería</p>
-    <p>&copy; contacto@vmjj.cl</p>
+    <p>contacto@vmjj.cl</p>
   </footer>
 </body>
 </html>
+
+
