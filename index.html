@@ -22,11 +22,14 @@
       align-items: center;
       justify-content: center;
       gap: 20px; /* espacio entre logo y texto */
-      flex-wrap: wrap; /* para que en pantallas pequeñas se acomode */
+      flex-wrap: wrap; /* en pantallas pequeñas, pasa a columna */
     }
     .header-container img {
-      width: 100px; /* ajusta el tamaño del logo */
+      width: 100px;
       height: auto;
+    }
+    .header-text {
+      text-align: center; /* centra el texto dentro de su bloque */
     }
     .header-text h1 {
       margin: 0;
@@ -68,7 +71,7 @@
 <body>
   <header>
     <div class="header-container">
-      <img src="logo.jpg" alt="Logo VMJJ">
+      <img src="logo.png" alt="Logo VMJJ">
       <div class="header-text">
         <h1>VMJJ</h1>
         <p>Electromovilidad Autónoma en Minería</p>
@@ -119,6 +122,3 @@
   </footer>
 </body>
 </html>
-
-
-
